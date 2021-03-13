@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/FA_folder/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Test</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">Welcome!</h1>
+        <style>
+            h1 {
+            color : black;
+        }
+        </style>
+        <p class="lead">Are you ready to be productive ?</p>
+        <hr class="my-4">
+        <p>Add items to your to do list : </p>
+        <style> 
+            p {
+                font-size: medium;
+            }
+        </style>
+      </div>
+      <div class="form-group">
+        <input class="form-control form-control-lg" type="text" placeholder="Add a date" id="myDateInput">
+        <input class="form-control form-control-lg" type="text" placeholder="Add a task" id="myTaskInput">
+        <div class="col text-center">
+            <span onclick="newElement()" class="btn btn-outline-primary" id ="myBtn">Add task</span>
+        </div>
+      </div>
+      <ul id ="myUL">
+      </ul>
+      <script src="Todo.js"></script>
+</body>
+</html>
